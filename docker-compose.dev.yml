@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: contract-checker-myself-web
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - .:/app
+
+    command: ./start.sh # eikhane "uv run python manage.py migrate" and "uv run python manage.py runserver 0.0.0.0:8000" ei duita command cole
+
+    environment:
+      - PYTHONUNBUFFERED=1

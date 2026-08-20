@@ -1,0 +1,33 @@
+# Python / uv
+.venv
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+*.log
+
+# Environment
+.env
+.env.*
+
+# Tools / caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Docker
+docker-compose.override.yml
